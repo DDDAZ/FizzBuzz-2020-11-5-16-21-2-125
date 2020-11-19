@@ -108,5 +108,19 @@ namespace FizzBuzzTest
             // then
             Assert.Equal(expectResult, actual);
         }
+
+        [Fact]
+        public void Should_given_105_return_FizzBuzzWhizz()
+        {
+            // given
+            var expectResult = "FizzBuzzWhizz";
+
+            // when
+            var say = new Say();
+            var actual = say.SayFizzBuzz(105);
+
+            // then
+            Assert.Equal(expectResult, actual);
+        }
     }
 }
