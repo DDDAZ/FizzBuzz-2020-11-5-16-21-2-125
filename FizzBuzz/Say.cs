@@ -6,24 +6,26 @@ namespace FizzBuzz
 {
     public class Say
     {
+        private string sayWhat;
+
         public string SayFizzBuzz(int order)
         {
             if (order % 3 == 0)
             {
-                return "Fizz";
+                sayWhat += "Fizz";
             }
 
             if (order % 5 == 0)
             {
-                return "Buzz";
+                sayWhat += "Buzz";
             }
 
             if (order % 7 == 0)
             {
-                return "Whizz";
+                sayWhat += "Whizz";
             }
 
-            return order.ToString();
+            return sayWhat;
         }
     }
 }
